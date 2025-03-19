@@ -4,54 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 1</title>
-    <style>
-        body{
-            background-color: white;
-        }
-        .container{
-            display: flex;
-            gap: 50px;
-            margin-top: 350px;
-            
-        }
-        .img{
-            width: 100px;
-            height: 100px;
-        }
-        .home{
-            width: 300px;
-            height: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/exercise1.css">
+
 </head>
 <body>
     <div class="container">
-    <img src="/assets/images/man.gif" alt="man" class="img">A
-    <img src="/assets/images/man.gif" alt="man" class="img">B
-    <img src="/assets/images/man.gif" alt="man" class="img">C
-    <img src="/assets/images/man.gif" alt="man" class="img">D
-    <img src="/assets/images/man.gif" alt="man" class="img">E
-    <img src="/assets/images/man.gif" alt="man" class="img">F
+    <img src="/assets/images/man.gif" alt="man" class="img"><span class="letter">A</span>
+    <img src="/assets/images/man.gif" alt="man" class="img"><span class="letter">B</span>
+    <img src="/assets/images/man.gif" alt="man" class="img"><span class="letter">C</span>
+    <img src="/assets/images/man.gif" alt="man" class="img"><span class="letter">D</span>
+    <img src="/assets/images/man.gif" alt="man" class="img"><span class="letter">E</span>
+    <img src="/assets/images/man.gif" alt="man" class="img"><span class="letter">F</span>
     <img src="/assets/images/home.gif" alt="man" class="home">
 </div>
+<div class="buttons">
+    <div class="btn-1">
+      <button class="start-btn">Start</button>
+    </div>
+    <div class="btn-2">
+      <button class="stop-btn">Stop</button>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="/js/exercise1.js"></script>
+
 </body>
-<script>
-    const boxes = document.querySelectorAll('.img');
-
-    let currentIndex = 0;
-
-    let previousIndex = 0;
-
-    function changeLetter(){
-       images.forEach(img => {
-        });
-        images[currentIndex].style.te = "red";
-
-        previousIndex = (currentIndex - 1 + images.length) % images.length;
-        boxes[previousIndex].style.backgroundColor = "blue";
-        currentIndex = (currentIndex + 1) % boxes.length;
-       
-    }
-    setInterval(changeletter, 1000);
-</script>
 </html>
