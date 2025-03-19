@@ -16,11 +16,9 @@ $(document).ready(function () {
       index++;
     }, 500);
   }
-
   function stopColorChange() {
     clearInterval(interval);
   }
-
   $(".start-btn").click(function () {
     startColorChange();
   });
